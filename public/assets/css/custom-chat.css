@@ -1,0 +1,139 @@
+/* ==== icon style ==== */
+#myspa_subiz{
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    right: 15px;
+    top: unset;
+    bottom: 0;
+    width: 118px;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 1;
+    border-bottom: none;
+    background-color: transparent;
+    transition: all .2s ease-in-out;
+    padding: 0 10px;
+}
+#myspa_subiz:hover{
+    background-color: #363636;
+    cursor: pointer;
+    /* box-shadow: 0 8px 21.25px 3.75px rgb(194 191 255 / 65%); */
+}
+#myspa_subiz>.myspa-subiz-chat.desk{
+    display: block;
+    width: 30px;
+}
+#myspa_subiz>.myspa-subiz-chat.mobile{
+    display: none;
+    box-shadow: 0 0 7px 2px #c9c9c9;
+    background: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    padding: 15px;
+}
+#myspa_subiz>.myspa-subiz-chat{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.myspa-subiz-chat.desk .subiz-ico{
+    transform: scale(.8);
+}
+.login_btn#myspa_subiz>.myspa-subiz-chat.mobile .subiz-ico,
+.subiz-ico{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* ==== end ==== */
+/* ==== widget style ==== */
+#cprhliqipldavybercftg,
+#cprhliqipldavybercftg.myspa_subiz_widget{
+    display: block;
+}
+#cprhliqipldavybercftg>.desktop{
+    display: block;
+}
+#cprhliqipldavybercftg>.desktop>.widget-container--right {
+    max-width: 576px !important;
+    width: calc(100vw / 3) !important;
+}
+#myspa_subiz.is_order{
+    position: fixed;
+    height: 38px;
+    width: 136px;
+    bottom: 52px;
+    right: 17px;
+    top: unset;
+    z-index: 999999999999;
+    background: white;
+    border-radius: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 6px 0;
+    border: none;
+    box-shadow: 0 8px 21.25px 3.75px rgb(194 191 255 / 65%);
+}
+/* ==== end ====*/
+/* ==== login screen ====*/
+.login_btn#myspa_subiz{
+    border: none;
+    background-color: transparent;
+}
+.login_btn#myspa_subiz>.myspa-subiz-chat.mobile{
+    position: fixed;
+    top: unset;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+#cprhliqipldavybercftg .chat-button--img-container{
+    display: none !important;
+    /* opacity: 0 !important; */
+    /* z-index: -1; */
+}
+/* ==== end  ====*/
+@media only screen and (max-width: 768px){
+    #myspa_subiz > .myspa-subiz-chat.desk ~ span {
+        display: none;
+    }
+    #cprhliqipldavybercftg>.desktop>.widget-container--right {
+        width: 100% !important;
+    }
+    #myspa_subiz:hover{
+        background-color: unset;
+    }
+    #myspa_subiz{
+        background-color: transparent;
+        width: max-content;
+        border: none;
+        top: 0px;
+        bottom: 0;
+    }
+    #myspa_subiz>.myspa-subiz-chat.desk{
+        display: none;
+    }
+    #myspa_subiz>.myspa-subiz-chat.mobile{
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        top: unset;
+    }
+    #myspa_subiz.is_order>.myspa-subiz-chat.desk{
+        display: block;
+    }
+    #myspa_subiz.is_order>.myspa-subiz-chat.mobile{
+        display: none;
+    }
+
+}

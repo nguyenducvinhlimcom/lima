@@ -1,0 +1,48 @@
+.pet-avatar{
+	border-radius: 10px;
+	width: 100%;
+	height:auto;
+	max-width: 100%;
+}
+.pet-avatar img{
+	width: 100%;
+	height: auto !important;
+}
+.tab-setting .pet-history .nav > li > a,
+.tab-setting .pet-history .nav-tabs > li > a{
+	background: #6254b2 !important;
+}
+.tab-setting .pet-history .nav > li > a:hover,
+.tab-setting .pet-history .nav > li > a:focus,
+.tab-setting .pet-history .nav-tabs > li.active > a{
+	border-bottom:0  !important;
+	background: black;
+}
+ul.pet-list{
+	list-style: none;
+	margin:30px 0 30px;
+	display: table;
+	width: 100%;
+	text-align: center;
+	padding:0;
+}
+
+ul.pet-list li{
+	display: inline-block;
+	width: 60px;
+	margin: 5px;
+	text-align: center;
+}
+ul.pet-list li a span{
+	max-width: 100%;
+	border-radius: 50px;
+	border: 2px solid #FFF;
+}
+ul.pet-list li.active{
+	font-weight: bold;
+	color:#7266ba;
+}
+ul.pet-list li.active a span{
+	border-radius: 50px;
+	border: 3px solid #9acc51;
+}

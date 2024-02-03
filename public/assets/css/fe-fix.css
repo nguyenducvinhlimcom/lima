@@ -1,0 +1,424 @@
+footer#footer.app-footer.app-footer-fixed{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background: rgb(235 245 221);
+}
+footer#footer .ads{
+    display: flex;
+    font-weight: bold;
+    width: max-content;
+    margin-left: 20px;
+    height: 40px;
+}
+footer#footer .ads>div:first-child{
+    margin-left: 0;
+}
+footer#footer .ads>div:last-child{
+    margin-right: 0;
+}
+footer#footer .ads>div,
+footer#footer .ads>a{
+    /* margin: 0 20px; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    transition: all .3s ease-in-out;
+}
+footer#footer>div.wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+footer#footer>div.wrapper>div{
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    color: black;
+    font-weight: bold;
+}
+footer#footer .ads>a:hover,
+footer#footer>div.wrapper>div:hover{
+    background-color: rgba(171, 211, 115, 0.5);
+}
+footer#footer>div.wrapper>div.footer-hotline a{
+    margin-left: 5px;
+}
+footer#footer>div.wrapper>div>a{
+    padding: 0 10px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+footer#footer .ads .new_feature{
+    position: relative;
+}
+footer#footer span.new_btn{
+    position: absolute;
+    color: white;
+    padding: 2px 5px;
+    background-color: #f82431;
+    border-radius: 10px;
+    right: 0;
+    transform: rotate(10deg);
+    top: -5px;
+    font-size: 10px;
+    line-height: 1;
+}
+footer#footer > .wrapper .zalo-chat img {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 4px;
+    width: 24px;
+}
+footer#footer > .wrapper .fb-chat img {
+    border-radius: 4px;
+    margin: 4px;
+    width: 24px;
+}
+/* ======== support button ======== */
+#support_btn .backdrop{
+    position: fixed;
+    display: none;
+    inset: 0;
+    z-index: -2;
+}
+#support_btn .support-option.active ~.backdrop{
+    display: block;
+}
+#support_btn{
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    /* border-radius: 10px; */
+    padding: 0 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+#support_btn .support-option.active{
+    bottom: 100%;
+    opacity: 1;
+    visibility: visible;
+    /* top: unset; */
+}
+.support-option{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: calc(-400% - 50px);
+    top: unset;
+    visibility: hidden;
+    width: 100%;
+    margin-left: -20px;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    background-color: #fbfbfb;
+    z-index: -1;
+}
+#support_btn .support-option>a{
+    padding: 5px 0;
+    padding-left: 15px;
+    color: black;
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    width: 100%;
+    text-align: left;
+}
+.support-option .sp-icon{
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+#support_btn .support-option>a i{
+    padding: 8px;
+    transition: all .2s ease-in-out;
+}
+#support_btn .support-option>a:hover{
+    padding-left: 20px;
+    border-bottom: 2px solid #abd373 ;
+}
+#support_btn .support-option>a:hover span{
+    color: black;
+    opacity: .8;
+}
+#support_btn .support-option>a i:hover{
+    transform: scale(1.3);
+}
+
+#support_call{
+    text-align: center;
+}
+
+#support_call .support_call_list{
+    width: 100px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+.items{
+    width: 100%;
+    height: 60px;
+}
+.padding-top-15px{
+    padding-top: 15px;
+}
+
+.hover:hover{
+    background-color: whitesmoke;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-bottom: 1px solid silver;
+}
+.hover:hover .icon-call{
+    animation: ringring 2s infinite;
+}
+.hover:hover .name_call{
+    display: block;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name_call{
+    display: none;
+    margin-top: -50px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.icon-call{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+.message{
+    background-color: white;
+    color: #f82431;
+    position: absolute;
+    width: 100%;
+    margin-top: -50%;
+    z-index: -9999;
+}
+
+.arrow_down{
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    margin-top:2px;
+    margin-left: 40px;
+}
+.callio-widget-icon{
+    margin-bottom: 9% !important;
+    right: 0px !important;
+
+}
+
+div[id^="omi_sdk_"]{
+    margin-bottom: 5% !important;
+    /* right: 11px !important;
+    width: 38px !important;
+    height: 38px !important; */
+}
+/* div[id^="omi_sdk_"]:hover{
+    animation: ringring 2s linear;
+
+} */
+.callio-widget-icon:hover{
+    animation: ringring 2s linear;
+}
+
+@keyframes open_call{
+    from {  margin-top: 150px;
+            display : none;
+    }
+    to {  margin-top: -165px;}
+}
+@keyframes ringring{
+    0% {
+        transform: rotate(0deg)
+    }
+    25%{
+        transform: rotate(90deg)
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    55%{
+        transform: rotate(90deg);
+    }
+    65%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    80%{
+        transform: rotate(0deg)
+    }
+    83%{
+        transform: rotate(90deg);
+    }
+    90%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    footer#footer > .wrapper .fb-chat img,
+    footer#footer > .wrapper .zalo-chat img {
+        width: 20px;
+        margin-left: 4px;
+    }
+    footer#footer > .wrapper .fb-chat,
+    footer#footer > .wrapper .zalo-chat {
+        margin-left: 4px;
+    }
+    footer#footer > div.wrapper > div > a {
+        grid-gap: 0;
+    }
+    .oderCntBtn{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        overflow-x: scroll;
+    }
+    .oderCntBtn>*:first-child{
+        margin-left: 0;
+    }
+    .oderCntBtn>*:last-child{
+        margin-right: 0;
+    }
+    .oderCntBtn>*{
+        margin: 0 3px;
+    }
+    #footer>div:before, #footer>div:after{
+        display: table;
+        content: " ";
+    }
+    #footer>div:after {
+        clear: both;
+    }
+    .support-option{
+        bottom: unset;
+        opacity: 0;
+        z-index: 2;
+        bottom: calc(100% + 10px);
+    }
+    #support_btn{
+        padding: 0;
+    }
+    #support_btn .support-option >a{
+        padding: 5px 0;
+    }
+    #support_btn .support-option >a:first-child{
+        padding-bottom: 0;
+    }
+    #support_btn .support-option >a:last-child{
+        padding-top: 0;
+    }
+    #support_btn .support-option.active{
+        width: calc(100% + 70px);
+        padding: 10px 15px;
+        margin-left: 0;
+    }
+    #support_btn .support-option>a:hover{
+        padding-left: 5px;
+    }
+    #support_btn .backdrop{
+        z-index: 1;
+    }
+    footer#footer.app-footer.app-footer-fixed{
+        position: unset;
+        flex-direction: column;
+        bottom: 0;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    footer#footer .ads{
+        margin: 0;
+        height: auto;
+    }
+    footer#footer .ads .new_feature{
+        padding: 0;
+        margin-left: 10px;
+    }
+    footer#footer span.new_btn{
+        top: -10px;
+        right: -20px;
+        transform: rotate(15deg);
+    }
+    footer#footer>div.wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 !important;
+        margin: 0;
+        justify-content: unset
+    }
+    footer#footer>div.wrapper>div{
+        padding: 0;
+        margin: 0;
+        height: 20px;
+    }
+    footer#footer>div.wrapper>div:nth-child(2){
+        margin: 0 10px;
+    }
+    footer#footer .ads>div, footer#footer .ads>a,
+    footer#footer>div.wrapper>div>a{
+        margin: 0;
+        padding: 0;
+    }
+    footer#footer>div.wrapper>div.footer-hotline a{
+        margin-left: 0;
+    }
+    .callio-widget-icon{
+        margin-bottom: 24% !important;
+        right:-1px !important;
+    }
+    #omi_sdk_q4l.omi-sdk-ww9{
+        margin-bottom: 13% !important;
+        right: 10px !important;
+        width: 38px !important;
+        height: 38px !important;
+    }
+}
+@media only screen and (max-width: 385px){
+    .oderCntBtn{
+        justify-content: unset;
+        overflow-x: scroll;
+        /* firefox config */
+        scrollbar-width: none;
+    }
+    .oderCntBtn::-webkit-scrollbar{
+        display: none;
+    }
+    .callio-widget-icon{
+        margin-bottom: 30% !important;
+        right:5px;
+    }
+    #omi_sdk_q4l.omi-sdk-ww9{
+        margin-bottom: 17% !important;
+        right: 10px !important;;
+    }
+}
